@@ -376,7 +376,7 @@ app.layout = html.Div(
                         html.Div(
 
                             children=[html.Button('Display Charts', id='collapse-button', style={"display": "block"}),
-                                      html.Button('Hidden Charts', id='collapse-button2', style={"display": "None"})]
+                                      html.Button('Hide Charts', id='collapse-button2', style={"display": "None"})]
                         ),
                     ],
                 ),
@@ -652,4 +652,4 @@ def callback(n_clicks, nh_clicks, style_map, style, btn1, btn2):
 # when file executed as a standalone application
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host="127.0.0.1", port=8050)
+    app.run_server(debug=False, host="127.0.0.1", port=8050)
